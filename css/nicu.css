@@ -4,3 +4,437 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    position: relative;
+    background: white;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.footer-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 70px 30px 40px;
+
+    display: grid;
+    grid-template-columns:
+        1.3fr
+        1.2fr
+        .9fr
+        .7fr
+        .9fr;
+
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* =========================
+   LOGO SECTION
+========================= */
+
+.footer-logo {
+    width: 300px;
+    max-width: 100%;
+}
+
+.footer-brand p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 320px;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    width: 48px;
+    height: 48px;
+    background: #08b8b2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-size: 20px;
+
+    border-radius: 12px;
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.social-links a:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================
+   DOCTOR IMAGE
+========================= */
+
+.footer-doctor {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-doctor img {
+    width: 420px;
+    max-width: 100%;
+    transform: translateY(60px);
+}
+
+/* =========================
+   COLUMN HEADINGS
+========================= */
+
+.footer-services h3,
+.footer-support h3,
+.footer-timings h3 {
+    color: #1247c4;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+.footer-services ul,
+.footer-support ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-services li,
+.footer-support li {
+    margin-bottom: 12px;
+    color: #444;
+    font-size: 18px;
+}
+
+.footer-support a {
+    text-decoration: none;
+    color: #444;
+}
+
+.footer-support a:hover {
+    color: #08b8b2;
+}
+
+/* =========================
+   TIMINGS
+========================= */
+
+.footer-timings p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.footer-timings .green {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter-row {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 30px 60px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter-line {
+    margin-left: 50%;
+    border-top: 1px solid #d8d8d8;
+    margin-bottom: 35px;
+}
+
+.newsletter-row h2 {
+    margin-left: 50%;
+
+    max-width: 450px;
+
+    color: #4b4b4b;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+/* =========================
+   COPYRIGHT
+========================= */
+
+.footer-bottom {
+    background: var(--primary);
+    padding: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* =========================
+   WHATSAPP
+========================= */
+.footer-services ul li a{
+    color:#444;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-services ul li a:hover{
+    color:#08b8b2;
+    padding-left:5px;
+}
+/* =========================
+   CLOUDS
+========================= */
+
+.cloud1,
+.cloud2 {
+    position: absolute;
+    background: #f7efd9;
+    opacity: .6;
+    border-radius: 100px;
+}
+
+.cloud1 {
+    width: 220px;
+    height: 70px;
+    top: 100px;
+    left: 32%;
+}
+
+.cloud1::before,
+.cloud1::after {
+    content: "";
+    position: absolute;
+    background: #f7efd9;
+    border-radius: 50%;
+}
+
+.cloud1::before {
+    width: 80px;
+    height: 80px;
+    left: 25px;
+    top: -35px;
+}
+
+.cloud1::after {
+    width: 90px;
+    height: 90px;
+    right: 25px;
+    top: -40px;
+}
+
+.cloud2 {
+    width: 280px;
+    height: 80px;
+    top: 120px;
+    right: 6%;
+}
+
+.cloud2::before,
+.cloud2::after {
+    content: "";
+    position: absolute;
+    background: #f7efd9;
+    border-radius: 50%;
+}
+
+.cloud2::before {
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: -40px;
+}
+
+.cloud2::after {
+    width: 110px;
+    height: 110px;
+    right: 40px;
+    top: -50px;
+}
+/* =========================
+   HILLS
+========================= */
+
+.hill1,
+.hill2 {
+    position: absolute;
+    background: #f8f0f0;
+    opacity: .6;
+}
+
+.hill1 {
+    width: 380px;
+    height: 170px;
+    right: 18%;
+    bottom: 130px;
+
+    border-radius: 200px 200px 0 0;
+}
+
+.hill2 {
+    width: 260px;
+    height: 120px;
+    right: 3%;
+    bottom: 130px;
+
+    border-radius: 200px 200px 0 0;
+}
+
+/* =========================
+   DECORATIVE CIRCLES
+========================= */
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pink {
+    width: 50px;
+    height: 50px;
+
+    background: #ffc5cf;
+
+    top: 320px;
+    right: 360px;
+}
+
+.purple {
+    width: 22px;
+    height: 22px;
+
+    background: #d8c1ff;
+
+    top: 350px;
+    right: 430px;
+}
+
+.yellow {
+    width: 35px;
+    height: 35px;
+
+    background: #ffe48a;
+
+    top: 200px;
+    right: 800px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:1200px){
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-doctor{
+        grid-column:span 2;
+    }
+
+    .newsletter-line,
+    .newsletter-row h2{
+        margin-left:0;
+    }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .footer-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .footer-brand{
+        align-items:flex-start;
+        text-align:left;
+    }
+
+    .footer-logo{
+        width:220px;
+    }
+
+    .footer-services{
+        margin-top:10px;
+    }
+
+    .footer-doctor{
+        display:none;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    .footer-container{
+        padding:50px 20px 20px;
+    }
+
+    .footer-services h3,
+    .footer-support h3,
+    .footer-timings h3{
+        font-size:24px;
+    }
+
+    .footer-services li,
+    .footer-support li,
+    .footer-timings p{
+        font-size:16px;
+    }
+
+    .newsletter-row h2{
+        font-size:24px;
+        line-height:1.5;
+    }
+
+}

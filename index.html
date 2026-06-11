@@ -82,21 +82,19 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
                     </li>
 
                     <!-- Info -->
-                <li class="dropdown">
+              <li class="mobile-dropdown">
 
-                        <a href="#">
-                            Info
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
+    <span class="info-toggle">
+        Info
+        <i class="fa-solid fa-chevron-down"></i>
+    </span>
 
-                        <ul class="dropdown-menu">
-                            <li><a href="mediclam.html">Mediclam</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            
-                          
-                        </ul>
+    <ul>
+        <li><a href="mediclaim.html">Mediclaim</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
 
-                    </li>
+</li>
 
                     <li><a href="gallery.html">Gallery</a></li>
 
@@ -178,19 +176,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
             </li>
 
-            <li class="mobile-dropdown">
+     <li class="mobile-dropdown">
 
-                <span>
-                    Info
-                    <i class="fa-solid fa-chevron-down"></i>
-                </span>
+    <div class="mobile-dropdown-header">
+        <a href="#">Info</a>
 
-                <ul>
-                    <li><a href="mediclaim.html">Mediclaim</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
+        <button class="dropdown-toggle">
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    </div>
 
-            </li>
+    <ul>
+        <li><a href="mediclaim.html">Mediclaim</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+</li>
 
             <li><a href="gallery.html">Gallery</a></li>
 
@@ -225,6 +226,10 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
             });
 
         });
+        // Info Dropdown
+
+
+
 
     </script>
 
