@@ -27,7 +27,7 @@
 
     <header class="header">
 
-        <div class="nav-container">
+        <div class="container">
 
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="Rishika Hospital">
@@ -81,17 +81,21 @@
                     </li>
 
                     <!-- Info -->
-                  <li class="dropdown">
-    <a href="#">
-        Info
-        <i class="fa-solid fa-chevron-down"></i>
-    </a>
+                    <li class="dropdown">
 
-    <ul class="dropdown-menu">
-        <li><a href="mediclaim.html">Mediclaim</a></li>
-        <li><a href="blog.html">Blog</a></li>
-    </ul>
-</li>
+                        <a href="#">
+                            Info
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="mediclaim.html">Mediclaim</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+
+
+                        </ul>
+
+                    </li>
 
                     <li><a href="gallery.html">Gallery</a></li>
 
@@ -115,7 +119,7 @@
 
     <!-- Mobile Menu -->
 
- <div class="mobile-menu">
+    <div class="mobile-menu">
 
         <ul>
 
@@ -198,37 +202,33 @@
         </ul>
 
     </div>
+
     <!-- JS -->
 
     <script>
 
-     const hamburger = document.querySelector(".hamburger");
-const mobileMenu = document.querySelector(".mobile-menu");
-const dropdownButtons = document.querySelectorAll(".dropdown-toggle");
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
 
-// à°®à±†à°¨à±‚ à°“à°ªà±†à°¨à±/à°•à±à°²à±‹à°œà±
-hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-});
-
-// à°¡à±à°°à°¾à°ªà±â€Œà°¡à±Œà°¨à± à°²à°¾à°œà°¿à°•à± (à°’à°•à°Ÿà°¿ à°“à°ªà±†à°¨à± à°šà±‡à°¸à±à°¤à±‡ à°®à°¿à°—à°¿à°²à°¿à°¨à°µà°¿ à°•à±à°²à±‹à°œà± à°…à°µà±à°¤à°¾à°¯à°¿)
-dropdownButtons.forEach(button => {
-    button.addEventListener("click", function (e) {
-        e.preventDefault();
-        
-        const currentDropdown = this.closest(".mobile-dropdown");
-
-        // à°®à°¿à°—à°¿à°²à°¿à°¨ à°“à°ªà±†à°¨à± à°‰à°¨à±à°¨ à°¡à±à°°à°¾à°ªà±â€Œà°¡à±Œà°¨à±à°¸à±â€Œà°¨à± à°•à±à°²à±‹à°œà± à°šà±‡à°¯à°¿
-        document.querySelectorAll(".mobile-dropdown").forEach(item => {
-            if (item !== currentDropdown) {
-                item.classList.remove("open");
-            }
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("active");
         });
 
-        // à°ªà±à°°à°¸à±à°¤à±à°¤ à°¦à°¾à°¨à°¿à°¨à°¿ à°Ÿà±‹à°—à±à°²à± à°šà±‡à°¯à°¿
-        currentDropdown.classList.toggle("open");
-    });
-});
+
+        document.querySelectorAll(".dropdown-toggle").forEach(button => {
+
+            button.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                const dropdown = this.closest(".mobile-dropdown");
+
+                dropdown.classList.toggle("open");
+
+            });
+
+        });
+
     </script>
 
     <!-- AOS -->
@@ -721,7 +721,7 @@ dropdownButtons.forEach(button => {
     </li>
 
     <li>
-        <a href="laboratory">24Ã—7 Laboratory</a>
+        <a href="laboratory">24*7 Laboratory</a>
     </li>
 
     <li>
@@ -768,7 +768,7 @@ dropdownButtons.forEach(button => {
 
         <h2>
             Sign up for our newsletter for the
-            latest childrenâ€™s health updates.
+            latest children's health updates.
         </h2>
 
     </div>
@@ -777,8 +777,7 @@ dropdownButtons.forEach(button => {
     <div class="footer-bottom">
 
         <p>
-            Copyright Â© 2024 Rishika Hospital,
-            All rights reserved.
+           Copyright © 2024 Rishika Hospital, All rights reserved.
         </p>
 
     </div>
