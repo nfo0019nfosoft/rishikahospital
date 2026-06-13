@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -115,7 +115,7 @@
 
     <!-- Mobile Menu -->
 
-    <div class="mobile-menu">
+ <div class="mobile-menu">
 
         <ul>
 
@@ -173,16 +173,15 @@
 
             </li>
 
-        <li class="mobile-dropdown">
+         
+     <li class="mobile-dropdown">
 
     <div class="mobile-dropdown-header">
-
         <a href="#">Info</a>
 
         <button class="dropdown-toggle">
             <i class="fa-solid fa-chevron-down"></i>
         </button>
-
     </div>
 
     <ul>
@@ -199,7 +198,6 @@
         </ul>
 
     </div>
-
     <!-- JS -->
 
     <script>
@@ -208,26 +206,26 @@
 const mobileMenu = document.querySelector(".mobile-menu");
 const dropdownButtons = document.querySelectorAll(".dropdown-toggle");
 
-// మెనూ ఓపెన్/క్లోజ్
+// à°®à±†à°¨à±‚ à°“à°ªà±†à°¨à±/à°•à±à°²à±‹à°œà±
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
 });
 
-// డ్రాప్‌డౌన్ లాజిక్ (ఒకటి ఓపెన్ చేస్తే మిగిలినవి క్లోజ్ అవుతాయి)
+// à°¡à±à°°à°¾à°ªà±â€Œà°¡à±Œà°¨à± à°²à°¾à°œà°¿à°•à± (à°’à°•à°Ÿà°¿ à°“à°ªà±†à°¨à± à°šà±‡à°¸à±à°¤à±‡ à°®à°¿à°—à°¿à°²à°¿à°¨à°µà°¿ à°•à±à°²à±‹à°œà± à°…à°µà±à°¤à°¾à°¯à°¿)
 dropdownButtons.forEach(button => {
     button.addEventListener("click", function (e) {
         e.preventDefault();
         
         const currentDropdown = this.closest(".mobile-dropdown");
 
-        // మిగిలిన ఓపెన్ ఉన్న డ్రాప్‌డౌన్స్‌ను క్లోజ్ చేయి
+        // à°®à°¿à°—à°¿à°²à°¿à°¨ à°“à°ªà±†à°¨à± à°‰à°¨à±à°¨ à°¡à±à°°à°¾à°ªà±â€Œà°¡à±Œà°¨à±à°¸à±â€Œà°¨à± à°•à±à°²à±‹à°œà± à°šà±‡à°¯à°¿
         document.querySelectorAll(".mobile-dropdown").forEach(item => {
             if (item !== currentDropdown) {
                 item.classList.remove("open");
             }
         });
 
-        // ప్రస్తుత దానిని టోగుల్ చేయి
+        // à°ªà±à°°à°¸à±à°¤à±à°¤ à°¦à°¾à°¨à°¿à°¨à°¿ à°Ÿà±‹à°—à±à°²à± à°šà±‡à°¯à°¿
         currentDropdown.classList.toggle("open");
     });
 });
@@ -353,7 +351,7 @@ dropdownButtons.forEach(button => {
                     hospital specializes in gynecology, obstetrics, neonatal, and pediatric care,
                     led by a team of experienced doctors. Dr. K. Jyothi Reddy, MS (OBG), FMAS, DMAS,
                     is a skilled laparoscopic surgeon and infertility specialist who brings expert
-                    care in women’s health and high-risk pregnancies. With state-of-the-art
+                    care in womenâ€™s health and high-risk pregnancies. With state-of-the-art
                     facilities to manage critical cases with compassion and precision, the hospital
                     is known for its 24/7 emergency services and comprehensive treatments. Today,
                     Rishika Mother and Child Hospital is a trusted healthcare provider for families
@@ -401,7 +399,7 @@ dropdownButtons.forEach(button => {
             </h2>
 
             <p>
-               At Rishika Mother and Child Hospital, we provide complete care for mothers and children. Our expert team of gynecologists and pediatricians offers services ranging from pregnancy care to advanced pediatric treatments. All essential healthcare services are available under one roof for your convenience. With modern facilities and a compassionate approach, we ensure a safe and supportive environment. Your family’s health and happiness remain our top priority.
+               At Rishika Mother and Child Hospital, we provide complete care for mothers and children. Our expert team of gynecologists and pediatricians offers services ranging from pregnancy care to advanced pediatric treatments. All essential healthcare services are available under one roof for your convenience. With modern facilities and a compassionate approach, we ensure a safe and supportive environment. Your familyâ€™s health and happiness remain our top priority.
             </p>
 
             
@@ -421,7 +419,7 @@ dropdownButtons.forEach(button => {
                 <div>
                     <h4>24/7 Emergency Care</h4>
                     <p>
-                        24/7 expert care for both mother and child — your family's
+                        24/7 expert care for both mother and child â€” your family's
                         health is always our priority.
                     </p>
                 </div>
@@ -518,7 +516,7 @@ dropdownButtons.forEach(button => {
                 <h3>Our Vision</h3>
 
                 <p>
-                   To be a beacon of hope in maternal, neonatal, and pediatric healthcare by providing compassionate, affordable, and quality services — ensuring every mother and child receives the care they deserve for a healthy and brighter future.
+                   To be a beacon of hope in maternal, neonatal, and pediatric healthcare by providing compassionate, affordable, and quality services â€” ensuring every mother and child receives the care they deserve for a healthy and brighter future.
                 </p>
 
             </div>
@@ -584,7 +582,7 @@ dropdownButtons.forEach(button => {
             </p>
 
             <p>
-              Specializing in newborn, children’s, and maternal care, the hospital offers state-of-the-art facilities and personalized treatment. Known for maintaining the highest standards of safety and hygiene, Rishika Mother and Child Hospital operates in compliance with national medical guidelines.
+              Specializing in newborn, childrenâ€™s, and maternal care, the hospital offers state-of-the-art facilities and personalized treatment. Known for maintaining the highest standards of safety and hygiene, Rishika Mother and Child Hospital operates in compliance with national medical guidelines.
             </p>
 
             <p>
@@ -723,7 +721,7 @@ dropdownButtons.forEach(button => {
     </li>
 
     <li>
-        <a href="laboratory">24×7 Laboratory</a>
+        <a href="laboratory">24Ã—7 Laboratory</a>
     </li>
 
     <li>
@@ -770,7 +768,7 @@ dropdownButtons.forEach(button => {
 
         <h2>
             Sign up for our newsletter for the
-            latest children’s health updates.
+            latest childrenâ€™s health updates.
         </h2>
 
     </div>
@@ -779,7 +777,7 @@ dropdownButtons.forEach(button => {
     <div class="footer-bottom">
 
         <p>
-            Copyright © 2024 Rishika Hospital,
+            Copyright Â© 2024 Rishika Hospital,
             All rights reserved.
         </p>
 
@@ -788,6 +786,11 @@ dropdownButtons.forEach(button => {
 
 </footer>
 
+<a href="https://wa.me/918886887470" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 </body>
 
 </html>
+
+
